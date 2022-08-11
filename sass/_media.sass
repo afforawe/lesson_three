@@ -59,14 +59,46 @@
 	.choice
 		&_img
 			width: 100%
-	.footer
-		&_wrapper > div:nth-child(even)
-			width: 47%
-		&_mobile
-			display: flex
+	footer 
+		padding: 25px 0 20px 0
+	.footer 
+		&_divider
+			width: 253px
+			margin: 0 auto
+		&_wrapper
+			padding-top: 22px
 			flex-direction: column
-		&_mobile > a:nth-child(even)
-			margin: 3px 0
+		&_mobile > a:nth-child(2)
+			margin: 0 3px 0 3px
+		&_mobile
+			align-items: center
+			flex-direction: row
+		&_wrapper > div 
+			margin-bottom: 20px
+			display: flex
+			justify-content: center
+			&:nth-child(1)
+				order: 2
+				width: 100%
+			&:nth-child(2)
+				order: 1
+				width: 100%
+			&:nth-child(3)
+				order: 3
+				width: 100%
+				justify-content: center
+		&_links 
+			width: 290px
+			&_main 
+				padding: 0
+				font-size: 14px
+			&_sub 
+				flex-wrap: wrap
+				justify-content: center
+				a 
+					margin: 0 7px
+			&_lang 
+				margin-top: 10px
 @media (max-width: 767px)
 	.menu
 		position: fixed
@@ -171,6 +203,12 @@
 			margin-top: 72px
 	.menu
 		width: 85%
+		&_item
+			width: 100%
+			text-align: center
+			padding: 5px 0
+		&_link
+			display: block
 	.reasons
 		padding: 22px 0 36px 0
 		&_block
@@ -188,8 +226,7 @@
 		margin-top: 15px
 		line-height: 16px
 	.mobile
-		padding: 17px 0 42px 0
-		width: 320px
+		padding: 20px 0 40px 0
 		.title
 			font-size: 16px
 		.subtitle
@@ -203,13 +240,12 @@
 				font-size: 20px
 				line-height: 31px
 	.choice
-		padding: 25px 0 0 0
-		position: relative
+		padding: 25px 0 33px 0
 		min-height: 390px
-		background: none
+		background: #000
 
 		.black
-			height: 390px
+			display: none
 		.title
 			display: none
 		.subtitle
@@ -217,11 +253,10 @@
 		&_img
 			margin: 35px auto 0 auto
 		&_descr
-			position: absolute
 			bottom: 49px
 			font-size: 18px
 			line-height: 24px
-			z-index: 2
+			text-align: center
 			color: #ffffff
 	.require
 		padding: 25px
@@ -257,27 +292,27 @@
 		&_wrapper
 			padding-top: 22px
 			flex-direction: column
-		&_wrapper > div:nth-child(3)
-			display: block
 		&_mobile > a:nth-child(2)
 			margin: 0 3px 0 3px
 		&_mobile
 			align-items: center
 			flex-direction: row
-			margin-left: 17px
-		&_social
-			margin-left: 75px
 		&_wrapper > div 
 			margin-bottom: 20px
+			display: flex
+			justify-content: center
 			&:nth-child(1)
 				order: 2
+				width: 100%
 			&:nth-child(2)
 				order: 1
+				width: 100%
 			&:nth-child(3)
 				order: 3
+				width: 100%
+				justify-content: center
 		&_links 
 			width: 290px
-			margin-left: 14px
 			&_main 
 				padding: 0
 				font-size: 14px
